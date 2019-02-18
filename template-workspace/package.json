@@ -1,0 +1,25 @@
+{
+  "name": "@frontful/template-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontful workspace",
+  "scripts": {
+    "clean": "frontful-tools clean \"{templates/*,projects/*,platforms/*/packages/*,platforms/*}/\" && frontful-tools clean",
+    "install": "frontful-tools install",
+    "tools": "frontful-tools"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Arturs Girons <arturs.girons@gmail.com> (https://artursgirons.info/)"
+  ],
+  "workspaces": {
+    "packages": [
+      "platforms/*/packages/*",
+      "platforms/*",
+      "projects/*"
+    ]
+  },
+  "dependencies": {
+    "frontful-tools": "4.x"
+  }
+}
